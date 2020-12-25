@@ -4,8 +4,52 @@
 		<title>
 			Tic Tac Toe by Siddharth Shenoy
 		</title>
+		<script src="js/three.js"></script>
+		<script src="js/jQuery.js"></script>
+		<script src="js/appData.js"></script>
+		<script src="js/appEvents.js"></script>
+		<script src="js/tictactoe.js"></script>
+
+		<style>
+			body
+			{
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
+			}
+			#drawContext
+			{
+				background-color: gray;
+			}
+			#info
+			{
+				font-family: "Arial";
+				font-size: 64px;
+				position: absolute;
+				top: 300px;
+				left: -100px;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+				color: white;
+			}
+			.infobox, .screen-text
+			{
+				position: absolute;
+				top: 300px;
+				left: 0px;
+				font-family: "Arial";
+				font-size: 18px;
+				padding: 10px;
+				text-align: center;
+				z-index: 100;
+				display:block;
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
-		Hello - Tic Tac Toe
+
 	</body>
 </html>
