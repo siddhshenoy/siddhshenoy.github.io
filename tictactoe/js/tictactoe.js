@@ -120,6 +120,22 @@ function checkWinner()
 				break;
 			}
 		}
+		if(!gameWon) {
+			for(var i = 0; i < 3; i++) {
+				for(var j = 0; j < 3; j++) {
+					if($("#box_" + j + "_" + j).html() != "") {
+						gameWon = false;
+						continue;
+					}
+					else
+					{
+						gameWon = true;
+						break;
+					}
+				}
+			}
+			if(gameWon) chanceText.innerHTML = "The game is a tie!";
+		}
 	}
 	return wonPattern;
 }
