@@ -124,12 +124,12 @@ function checkWinner()
 			for(var i = 0; i < 3; i++) {
 				for(var j = 0; j < 3; j++) {
 					if($("#box_" + j + "_" + j).html() != "") {
-						gameWon = false;
+						gameWon = true;
 						continue;
 					}
 					else
 					{
-						gameWon = true;
+						gameWon = false;
 						break;
 					}
 				}
